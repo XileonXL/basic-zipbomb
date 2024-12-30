@@ -52,7 +52,7 @@ def main(args):
             os.rename(next_zip, final_name)
             print(f"Your zipbomb is ready: {final_name}")
             print(f"Compressed size: {os.stat(final_name).st_size/1024.0} KB")
-            print(f"Uncompressed size: {args.size*n_copies_per_level**n_levels} GB ")
+            print(f"Uncompressed size: {n_copies_per_level**n_levels*args.size} MB")
 
 
 if __name__ == "__main__":
