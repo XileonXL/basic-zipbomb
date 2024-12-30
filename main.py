@@ -30,7 +30,7 @@ def make_copies_and_compress(input_file, output_zip, n_copies):
 def main(args):
     size_in_mb = args.size * 1024 * 1024
     init_file = "file.txt"
-    next_zip = "1.zip"
+    next_zip = "0.zip"
     n_levels = args.levels
     n_copies_per_level = args.copies
 
@@ -39,7 +39,7 @@ def main(args):
         compress_file(init_file, next_zip)
         os.remove(init_file)
 
-        for i in range(1, n_levels):
+        for i in range(n_levels):
             current_zip = next_zip
             next_zip = f"{i+1}.zip"
             make_copies_and_compress(current_zip, next_zip, n_copies_per_level)
