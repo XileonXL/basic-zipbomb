@@ -1,6 +1,6 @@
 # basic-zipbomb
 
-A zipbomb is just an amount of zip files automtically generated and compressed together starting from a txt file filled of zeros.
+A zipbomb is just an amount of zip files automatically generated and compressed together starting from a txt file filled of zeros.
 
 Using this python basic script you can generate a zipbomb with the following command:
 
