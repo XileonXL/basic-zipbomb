@@ -10,6 +10,6 @@ python3 main.py --size 1
 
 The valid arguments are:
 
-- `size` (required) --> Size of the initial file in MB. The total decompressed size of the zipbomb will be copies \*_ levels _ size.
+- `size` (required) --> Size of the initial file in MB. The total decompressed size of the zipbomb will be `copies ** levels * size`.
 - `levels` --> Number of nested ZIP levels to create (default: 3).
 - `copies` --> Number of copies to include in each level (default: 3).
